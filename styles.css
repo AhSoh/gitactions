@@ -1,0 +1,133 @@
+.box {
+  text-align: center;
+  width: 100%;
+  margin-top: 25%;
+}
+
+.logo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button {
+  margin-top: 30px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  color: #3c4043;
+  padding: 5px 16px;
+  border-radius: 4px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  height: 36px;
+  min-width: 54px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.button:hover {
+  box-shadow: 0 0 1px 2px lightgrey;
+  outline: none;
+}
+
+.bar {
+  border: 0.5px solid lightgrey;
+  border-radius: 25px;
+  width: 500px;
+  height: 40px;
+  background-color: transparent;
+  outline: 0;
+  font-size: 15px;
+  padding-left: 40px;
+  padding-bottom: 4px;
+}
+
+.bar:hover {
+  box-shadow: 0 0 5px 2px lightgrey;
+  outline: none;
+}
+
+.links {
+  direction: rtl;
+  text-align: right;
+}
+
+a:link, a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.input-icon span {
+  position: absolute;
+}
+
+.input-icon {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding-top: 16px;
+  padding-left: 5px;
+  min-width: 40px;
+  color: #9aa0a6;
+}
+
+.container {
+  margin-top: 28px;
+  font-family: arial, sans-serif;
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+label {
+  margin: 10px;
+  font-size: 13px;
+  width: 98%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: space-evenly;
+  vertical-align: middle;
+  padding-top: 7px;
+  clear: none;
+  white-space: nowrap;
+}
+
+label input {
+  min-width: 10px;
+  max-width: 1000px;
+  width: 65%;
+  border: 1px solid #d9d9d9;
+  height: 25px;
+  font-size: 13px;
+  padding: 1px 8px;
+  vertical-align: middle;
+}
+
+#biglabel {
+  font-size: 15px;
+  padding-bottom: 8px;
+}
+
+.container .button {
+  background-color: #4d90fe;
+  background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+  float: right;
+  margin-right: 0px;
+  border: 1px solid #3079ed;
+  color: #fff;
+  height: 30px;
+  min-width: 120px;
+  line-height: 100%;
+  font-size: 11px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Search</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!-- Links to Image Search or Advanced Search -->
+  <div class="links">
+    <header>
+      <a class="link" href="imagesearch.html" style="margin-right: 5px; font-family: arial,sans-serif; ">Images</a>
+      <a class="link" href="advancedsearch.html" style="margin-left:5px; margin-right:5px; font-family: arial,sans-serif;">Advanced</a>
+    </header>
+  </div>
+
+  <div class="box">
+
+    <div class="logo">
+      <a href="https://google.com"><img alt="Google" height="92" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></a>
+    </div>
+
+
+
+    <form autocomplete="off" action="https://google.com/search">
+
+      <div class="input-icon">
+        <span class="fa fa-search icon" aria-hidden="true"></span>
+        <input id="searchbar" class="bar" type="text" name="q">
+      </div>
+
+      <div>
+        <input id="searchbutton" class="button" type="submit" value="Google Search">
+        <!-- Set name="btnI" to become a GET parameter for Google Search equivalent to "I'm Feeling Lucky" -->
+        <input class="button" type="submit" name="btnI" value="I'm feeling lucky">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
