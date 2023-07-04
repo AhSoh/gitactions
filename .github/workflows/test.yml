@@ -5,8 +5,8 @@ on:
       -main
 jobs:
   my-job:
-  runs-on: ubuntu-latest
-  steps:
+    runs-on: ubuntu-latest
+    steps:
     - name: send telegram notification on push
       uses: appleboy/telegram-action@master
       with:
