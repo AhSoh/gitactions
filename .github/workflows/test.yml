@@ -1,4 +1,4 @@
-name: devops-example
+name: devops-example telegram notification
 on: push
   branches:
     -main
@@ -6,6 +6,15 @@ jobs:
   my-job:
   runs-on: ubuntu-latest
   steps:
-    run: echo "hello world"
-   
-    
+    - name: send telegram notification on push
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.221114962 }}
+        token: ${{ secrets.6177117608:AAGxGFEqLUIuoSuVueEXrimNvEYykaA__PE }}
+        message: |
+          ${{ github.actor }} created commit:
+          Commit message: ${{ github.event.commits[0].message }}
+
+          Repository: ${{ github.repository }}
+
+          See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
