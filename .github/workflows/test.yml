@@ -13,9 +13,10 @@ jobs:
         to: ${{ secrets.221114962 }}
         token: ${{ secrets.6177117608:AAGxGFEqLUIuoSuVueEXrimNvEYykaA__PE }}
         message: |
-          ${{ github.actor }} created commit:
-          Commit message: ${{ github.event.commits[0].message }}
-
-          Repository: ${{ github.repository }}
-
-          See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+          "test"
+          # ${{ github.actor }} created commit:
+          # Commit message: ${{ github.event.commits[0].message }}
+          #
+          # Repository: ${{ github.repository }}
+          #
+          # See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
