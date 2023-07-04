@@ -4,16 +4,16 @@ on:
     branches:
       -main
 jobs:
-  my-job:
+  notify_telegram:
     runs-on: ubuntu-latest
     steps:
-    - name: send telegram notification on push
-      uses: appleboy/telegram-action@master
-      with:
-        to: ${{ secrets.221114962 }}
-        token: ${{ secrets.6177117608:AAGxGFEqLUIuoSuVueEXrimNvEYykaA__PE }}
-        message: |
-          "test"
+      - name: send telegram notification on push
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_ID }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            "test"
           # ${{ github.actor }} created commit:
           # Commit message: ${{ github.event.commits[0].message }}
           #
